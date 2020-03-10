@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Prepper_Tycoon"
+run/main_scene="res://Scenes/App.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -23,6 +24,7 @@ config/icon="res://icon.png"
 window/size/width=1184
 window/size/height=576
 window/dpi/allow_hidpi=true
+window/stretch/mode="2d"
 
 [rendering]
 

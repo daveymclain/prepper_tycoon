@@ -1,5 +1,19 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Map_Test.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/MultiTouch.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
 
 [node name="App" type="Node2D"]
 
-[node name="MainMap" type="Node2D" parent="."]
+[node name="MultiTouch" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Average" type="Sprite" parent="MultiTouch"]
+texture = ExtResource( 3 )
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Map"]
+texture = ExtResource( 1 )
+centered = false
